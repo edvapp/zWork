@@ -1,0 +1,8 @@
+Idee:
+
+1. erzeuge wie gewohnt virtuelle Maschine
+2. erzeuge Spooler Directory: pdfToPrint
+3. frage verfügbare Drucker ab und erzeuge Unterverzeichnisse pdfToPrint/Drucker 1 usw.
+   falls nur ein Drucker evt. keine Unterverzeichnisse
+4. inotifywait überwacht pdfToPrint und teil Druckerauftäge den jeweiligen Druckern zu
+5. inotifywait wird beim Beenden der virtuellen Maschine wieder gelöscht
